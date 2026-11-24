@@ -28,6 +28,7 @@ def main() -> None:
     output_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "entry.txt").write_text(line + "\n", encoding="utf-8")
+    print(line)
 
 
 if __name__ == "__main__":
